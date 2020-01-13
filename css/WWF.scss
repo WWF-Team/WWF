@@ -194,21 +194,69 @@ header {
 .main {
     width: 100%;
     height: 970px;
-    
-    .section{
-        
-        .section_slide{
-            width: 1520px;
-            margin: 0 auto;
-            
-            color: #fff;
-            
-        }
-        
-    }
 
-    .type1 {
-        background: url("../img/main/sample.jpg");
-        background-size: cover;
+    .slide_section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .section {
+            width: 100%;
+            height: 100%;
+
+            .section_slide {
+                position: relative;
+                width: 1520px;
+                margin: 0 auto;
+                height: 100%;
+                color: #fff;
+
+                h2 {
+                    font-size: 52px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    line-height: 70px;
+                    padding: 0 80px;
+                }
+
+                p {
+                    font-size: 28px;
+                    font-weight: 300;
+                    margin-bottom: 16px;
+                    line-height: 40px;
+                    padding: 0 80px;
+                }
+            }
+        }
+
+        .type1 {
+            background: url("../img/main/sample.jpg");
+            background-size: cover;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            .arrow_area {
+                position: absolute;
+                cursor: pointer;
+                width: 40px;
+                height: 3px;
+                left: 0;
+                background-color: #fff;
+
+                &:nth-of-type(1) {
+                    top: -13px;
+                    transform: rotate(-45deg);
+                }
+
+                &:nth-of-type(2) {
+                    top: 13px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
     }
 }

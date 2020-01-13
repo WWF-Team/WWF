@@ -29,6 +29,16 @@ header .header_inner .gnb .campign span { line-height: 60px; font-size: 24px; fo
 header .header_inner .gnb .campign:nth-of-type(1) { background-color: #fff; }
 header .header_inner .gnb .campign:nth-of-type(2) { background-color: #006262; color: #fff; }
 
-.main { background: url("../img/main/sample.jpg"); background-size: cover; width: 100%; height: 970px; }
+.main { width: 100%; height: 970px; }
+.main .slide_section { position: relative; width: 100%; height: 100%; }
+.main .slide_section .section { width: 100%; height: 100%; }
+.main .slide_section .section .section_slide { position: relative; width: 1520px; margin: 0 auto; height: 100%; color: #fff; }
+.main .slide_section .section .section_slide h2 { font-size: 52px; font-weight: 700; margin-bottom: 30px; line-height: 70px; padding: 0 80px; }
+.main .slide_section .section .section_slide p { font-size: 28px; font-weight: 300; margin-bottom: 16px; line-height: 40px; padding: 0 80px; }
+.main .slide_section .type1 { background: url("../img/main/sample.jpg"); background-size: cover; }
+.main .slide_section .arrow { position: absolute; top: 50%; transform: translateY(-50%); }
+.main .slide_section .arrow .arrow_area { position: absolute; cursor: pointer; width: 40px; height: 3px; left: 0; background-color: #fff; }
+.main .slide_section .arrow .arrow_area:nth-of-type(1) { top: -13px; transform: rotate(-45deg); }
+.main .slide_section .arrow .arrow_area:nth-of-type(2) { top: 13px; transform: rotate(45deg); }
 
 /*# sourceMappingURL=WWF.css.map */
