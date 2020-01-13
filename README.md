@@ -6,12 +6,10 @@
 
 ## 작업할 내용
 
-- [ ] 메인 코딩
+- [ ] nav 국가 넣기
 
-- [ ] nav 자바스크립트 추가
+- [ ] nav 자바스크립트 구현
 
-- [ ] slider banner 스크립트 추가
+- [ ] main html/css 코딩
 
-- [ ] Main 추가
-
-TEST_another computer
+- [ ] main slide banner 스크립트 구현하기
