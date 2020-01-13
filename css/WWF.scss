@@ -192,8 +192,23 @@ header {
 }
 
 .main {
-    background: url("../img/main/sample.jpg");
-    background-size: cover;
     width: 100%;
     height: 970px;
+    
+    .section{
+        
+        .section_slide{
+            width: 1520px;
+            margin: 0 auto;
+            
+            color: #fff;
+            
+        }
+        
+    }
+
+    .type1 {
+        background: url("../img/main/sample.jpg");
+        background-size: cover;
+    }
 }
