@@ -4,6 +4,7 @@
 body {
     font-family: 'Noto Sans KR';
     letter-spacing: 0.03rem;
+    background-color: rebeccapurple;
 }
 
 header {
@@ -184,16 +185,111 @@ header {
 
                 &:nth-of-type(2) {
                     background-color: #006262;
-                    color: #fff;
                 }
             }
         }
     }
 }
 
-.main {
-    background: url("../img/main/sample.jpg");
-    background-size: cover;
+.main_swiper {
     width: 100%;
     height: 970px;
+
+    .swiper_slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+
+            .section_txt {
+                position: relative;
+                width: 1520px;
+                margin: 0 auto;
+                height: 100%;
+                padding-top: 400px;
+                color: #fff;
+
+                h2 {
+                    font-size: 52px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    line-height: 70px;
+                    padding: 0 80px;
+                }
+
+                p {
+                    font-size: 28px;
+                    font-weight: 300;
+                    margin-bottom: 16px;
+                    line-height: 40px;
+                    padding: 0 80px;
+                }
+            }
+        }
+
+        .section1 {
+            background: url("../img/main/sample.jpg");
+            background-size: cover;
+        }
+
+        .btn {
+            width: 1520px;
+            margin: 0 auto;
+
+            .arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                box-sizing: border-box;
+            }
+
+            .left {
+                left: 0;
+            }
+
+            .right {
+                right: 0;
+            }
+
+            .paging {
+                position: absolute;
+//                overflow: hidden;
+                width: 75px;
+                height: 65px;
+                z-index: 20;
+
+                .current_area {
+                    position: absolute;
+                    left: 80px;
+                    bottom: 206px;
+
+                    ul {
+                        display: inline-block;
+
+                        li {
+                            font-size: 32px;
+                            font-weight: 700;
+                            color: #006262;
+                        }
+                    }
+                }
+
+                .total_area {
+                    position: absolute;
+                    left: 80px;
+                    bottom: 206px;
+
+                    span {
+                        display: inline-block;
+                        font-weight: 300;
+                        font-size: 24px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
