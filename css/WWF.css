@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300, 400,500,700&display=swap");
-body { font-family: 'Noto Sans KR'; letter-spacing: 0.03rem; }
+body { font-family: 'Noto Sans KR'; letter-spacing: 0.03rem; background-color: rebeccapurple; }
 
 header { position: absolute; width: 100%; z-index: 100; }
 header .header_inner { position: relative; width: 1520px; height: 150px; margin: 0 auto; }
@@ -27,18 +27,24 @@ header .header_inner .gnb .gnb_box > ul .gnb_1dep .sub_menu .sub_wrap ul li a { 
 header .header_inner .gnb .campign { float: left; width: 150px; height: 60px; text-align: center; margin-left: 20px; }
 header .header_inner .gnb .campign span { line-height: 60px; font-size: 24px; font-weight: 500; }
 header .header_inner .gnb .campign:nth-of-type(1) { background-color: #fff; }
-header .header_inner .gnb .campign:nth-of-type(2) { background-color: #006262; color: #fff; }
+header .header_inner .gnb .campign:nth-of-type(2) { background-color: #006262; }
 
-.main { width: 100%; height: 970px; }
-.main .slide_section { position: relative; width: 100%; height: 100%; }
-.main .slide_section .section { width: 100%; height: 100%; }
-.main .slide_section .section .section_slide { position: relative; width: 1520px; margin: 0 auto; height: 100%; color: #fff; }
-.main .slide_section .section .section_slide h2 { font-size: 52px; font-weight: 700; margin-bottom: 30px; line-height: 70px; padding: 0 80px; }
-.main .slide_section .section .section_slide p { font-size: 28px; font-weight: 300; margin-bottom: 16px; line-height: 40px; padding: 0 80px; }
-.main .slide_section .type1 { background: url("../img/main/sample.jpg"); background-size: cover; }
-.main .slide_section .arrow { position: absolute; top: 50%; transform: translateY(-50%); }
-.main .slide_section .arrow .arrow_area { position: absolute; cursor: pointer; width: 40px; height: 3px; left: 0; background-color: #fff; }
-.main .slide_section .arrow .arrow_area:nth-of-type(1) { top: -13px; transform: rotate(-45deg); }
-.main .slide_section .arrow .arrow_area:nth-of-type(2) { top: 13px; transform: rotate(45deg); }
+.main_swiper { width: 100%; height: 970px; }
+.main_swiper .swiper_slide { position: relative; width: 100%; height: 100%; }
+.main_swiper .swiper_slide .swiper { width: 100%; height: 100%; }
+.main_swiper .swiper_slide .swiper .section_txt { position: relative; width: 1520px; margin: 0 auto; height: 100%; padding-top: 400px; color: #fff; }
+.main_swiper .swiper_slide .swiper .section_txt h2 { font-size: 52px; font-weight: 700; margin-bottom: 30px; line-height: 70px; padding: 0 80px; }
+.main_swiper .swiper_slide .swiper .section_txt p { font-size: 28px; font-weight: 300; margin-bottom: 16px; line-height: 40px; padding: 0 80px; }
+.main_swiper .swiper_slide .section1 { background: url("../img/main/sample.jpg"); background-size: cover; }
+.main_swiper .swiper_slide .btn { width: 1520px; margin: 0 auto; }
+.main_swiper .swiper_slide .btn .arrow { position: absolute; top: 50%; transform: translateY(-50%); box-sizing: border-box; }
+.main_swiper .swiper_slide .btn .left { left: 0; }
+.main_swiper .swiper_slide .btn .right { right: 0; }
+.main_swiper .swiper_slide .btn .paging { position: absolute; width: 75px; height: 65px; z-index: 20; }
+.main_swiper .swiper_slide .btn .paging .current_area { position: absolute; left: 80px; bottom: 206px; }
+.main_swiper .swiper_slide .btn .paging .current_area ul { display: inline-block; }
+.main_swiper .swiper_slide .btn .paging .current_area ul li { font-size: 32px; font-weight: 700; color: #006262; }
+.main_swiper .swiper_slide .btn .paging .total_area { position: absolute; left: 80px; bottom: 206px; }
+.main_swiper .swiper_slide .btn .paging .total_area span { display: inline-block; font-weight: 300; font-size: 24px; color: #fff; }
 
 /*# sourceMappingURL=WWF.css.map */
