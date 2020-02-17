@@ -7,16 +7,18 @@
 
             $picker.hide();
 
-            $util.click(function () {
+            $util.on("click", function ($close_event) {
                 $picker.toggle();
-                $util_img.hide();
-                $close.click(function () {
-                    $picker.hide();
-                })
-                $util.click(function () {
-                    $util_img.show();
-                })
+                $util_img.toggle();
+
+            })
+
+            var $close_event = $close.click(function () {
+                $picker.hide();
+                $util_img.show();
             });
+
+            //세계 WWF End
 
 
             var i = 0,
@@ -28,20 +30,21 @@
                 leng_indi = $("main").find(".slide").length - 1,
                 count = [
                     "01", "02", "03", "04"
-                ];
-//                timer = setInterval(auto_play, 3000);
-//
-//            function auto_play() {
-//                
-//                $slide.eq(i).stop().animate({
-//                    left: "-100%"
-//                }, 1500)
-//                i++;
-//                $slide.eq(i).stop().css("left", "100%").animate({
-//                    left: "0"
-//                }, 1500)
-//                d = i;
-//            }
+                ],
+                timer = setInterval(auto_play, 3000);
+
+            function auto_play() {
+
+                $slide.eq(i).stop().animate({
+                    left: "-100%"
+                }, 1500)
+                i++;
+                if (i > leng_indi) i = 0;
+                $slide.eq(i).stop().css("left", "100%").animate({
+                    left: "0"
+                }, 1500)
+                d = i;
+            }
 
 
 
@@ -84,6 +87,6 @@
                 d = i;
             })
 
-            //메인 슬라이더 영역 End
+            //메인 슬라이더 루프 영역 End
 
         })
