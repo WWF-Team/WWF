@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100, 300, 400,500,700&display=swap");
+body { font-family: 'Noto Sans KR'; letter-spacing: 0.03rem; }
+
+header { position: absolute; width: 100%; z-index: 10; }
+header .region_picker { position: absolute; overflow: hidden; width: 830px; height: 750px; background: url(../img/main/map.jpg) center/cover; border: 1px solid #fff; top: 0; left: 100px; padding: 80px 20px; z-index: 7; }
+header .region_picker p { position: absolute; color: #fff; top: 200px; font-weight: 500; font-size: 20px; line-height: 25px; }
+header .region_picker > a { position: absolute; top: 10px; right: 10px; }
+header .region_picker .pick_wrap { position: absolute; margin-left: 200px; left: 73px; border-top: 1px solid #fff; }
+header .region_picker .pick_wrap ul { float: left; width: 180px; }
+header .region_picker .pick_wrap ul li { margin-top: 15px; font-size: 13px; font-weight: 300; }
+header .region_picker .pick_wrap ul li a { color: #fff; }
+header .header_inner { position: relative; width: 1520px; height: 150px; margin: 0 auto; }
+header .header_inner .header_logo { position: absolute; z-index: 20; }
+header .header_inner .header_logo a { background: url(../img/logo/logo_korea.jpg); background-size: cover; width: 120px; height: 150px; display: block; }
+header .header_inner .gnb .gnb_util { position: absolute; width: 1400px; top: 24px; right: 0; }
+header .header_inner .gnb .gnb_util a { color: #fff; font-size: 14px; font-weight: 700; }
+header .header_inner .gnb .gnb_util .gnb_util_l { position: relative; float: left; margin-left: 50px; z-index: 20; }
+header .header_inner .gnb .gnb_util .gnb_util_l ion-icon, header .header_inner .gnb .gnb_util .gnb_util_l span, header .header_inner .gnb .gnb_util .gnb_util_l img { vertical-align: middle; }
+header .header_inner .gnb .gnb_util .gnb_util_l ion-icon { width: 30px; height: 30px; }
+header .header_inner .gnb .gnb_util .gnb_util_l img { margin-left: 10px; }
+header .header_inner .gnb .gnb_util .gnb_util_r { float: right; }
+header .header_inner .gnb .gnb_util .gnb_util_r span { margin-left: 30px; }
+header .header_inner .gnb .gnb_box { position: absolute; right: 0; top: 80px; height: 60px; z-index: 5; }
+header .header_inner .gnb .gnb_box .gnb_1dep { float: left; height: 60px; line-height: 60px; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li { position: relative; float: left; margin: 0 40px; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li:hover .sub_menu { opacity: 1; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li:hover a::before { content: ""; position: absolute; width: 10px; height: 10px; background-color: #e8e8e8; border-top: 3px solid #006262; border-right: 3px solid #006262; bottom: -29px; left: 50%; transform: translateX(-50%) rotate(-45deg); z-index: 20; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li > a { font-weight: 500; font-size: 20px; color: #fff; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li .sub_menu { opacity: 0; margin-top: 22px; background-color: #e8e8e8; border-top: 3px solid #006262; position: absolute; left: 50%; transform: translateX(-50%); }
+header .header_inner .gnb .gnb_box .gnb_1dep > li .sub_menu .sub_wrap { position: relative; box-sizing: content-box; padding: 30px 0 10px 20px; width: 200px; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li .sub_menu .sub_wrap p { font-weight: 500; font-size: 20px; line-height: 20px; color: #212121; margin-bottom: 20px; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li .sub_menu .sub_wrap .gnb_2dep { display: inline-block; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li .sub_menu .sub_wrap .gnb_2dep li { font-size: 13px; line-height: 40px; font-weight: 300; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li .sub_menu .sub_wrap .gnb_2dep li:hover { font-weight: bold; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li .sub_menu .sub_wrap .gnb_2dep li:hover a::after { width: 180px; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li .sub_menu .sub_wrap .gnb_2dep li a { position: relative; color: #000; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li .sub_menu .sub_wrap .gnb_2dep li a::before { display: none; }
+header .header_inner .gnb .gnb_box .gnb_1dep > li .sub_menu .sub_wrap .gnb_2dep li a::after { content: ""; position: absolute; width: 0%; height: 2px; left: 0; bottom: 0; background-color: #006262; transition: all 0.3s; }
+header .header_inner .gnb .gnb_box .gnb_1dep > .campign { float: left; text-align: center; margin: 0; }
+header .header_inner .gnb .gnb_box .gnb_1dep > .campign:hover a::before { content: ""; display: none; }
+header .header_inner .gnb .gnb_box .gnb_1dep > .campign a { display: inline-block; width: 150px; height: 60px; line-height: 60px; font-size: 24px; font-weight: 500; }
+header .header_inner .gnb .gnb_box .gnb_1dep .donate { background-color: #fff; }
+header .header_inner .gnb .gnb_box .gnb_1dep .donate a { color: #000; }
+header .header_inner .gnb .gnb_box .gnb_1dep .hire { background-color: #006262; margin-left: 10px; }
+
+main { position: relative; width: 100%; height: 100vh; overflow: hidden; font-size: 0; }
+main .slide { position: absolute; width: 100%; height: 100vh; font-size: 0; overflow: hidden; left: -100%; }
+main .slide:nth-child(1) { left: 0; }
+main .slide .section_txt { position: relative; width: 1440px; margin: 0 auto; color: #fff; margin-top: 450px; }
+main .slide .section_txt h2 { font-size: 50px; font-weight: 700; margin-bottom: 30px; line-height: 70px; }
+main .slide .section_txt p { font-size: 25px; font-weight: 300; margin-bottom: 16px; line-height: 43px; }
+main .section1 { background: url(../img/main/section1.jpg); background: cover; }
+main .section2 { background: url(../img/main/section2.jpg); background: cover; }
+main .section3 { background: url(../img/main/section3.jpg); background: cover; }
+main .section4 { background: url(../img/main/section4.jpg); background: cover; }
+main a { color: #fff; font-size: 100px; position: absolute; top: 50%; transform: translateY(-50%); }
+main a:first-of-type { left: 160px; }
+main a:last-of-type { right: 160px; transform: rotate(180deg); }
+main .paging { position: absolute; overflow: hidden; width: 75.5px; height: 65.5px; top: 700px; left: 240px; }
+main .paging ul li { width: 100px; height: 100px; font-size: 32px; font-weight: 500; color: #006262; }
+main .paging .total_area { position: absolute; bottom: 15px; right: 0; font-size: 22px; font-weight: 100; color: #fff; }
+
+/*# sourceMappingURL=WWF.css.map */
