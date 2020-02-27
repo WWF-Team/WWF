@@ -1,0 +1,28 @@
+@charset "uft-8";
+
+.footertop{width: 100%; height: 100px; background-color: #000; position: relative;}
+.footertop p{width: 440px; height: 30px; position: absolute; top: 50%; transform: translateY(-50%); left: 160px; color: #fff; font-size: 20px;}
+#email{width: 750px; height: 40px; position: absolute; top: 50%; transform: translateY(-50%); right: 320px; padding: 0px 0px 0px 40px; border: 0px;}
+#agreement{position: absolute; right: 530px; top: 76px;}
+.footertop span{position: absolute; top: 78px; right: 320px; font-size: 13px; color: #fff;}
+.footertop .che{position: absolute; top: 77px; right: 314px; width: 5px; height: 5px; border-radius: 50%; background-color: #d55c19;}
+.footertop button{position: absolute; right: 160px; top: 50%; transform: translateY(-50%); width: 120px; height: 40px; background-color: #006262; color: #fff; font-size: 20px; border: 1px solid #006262; cursor: pointer;}
+
+.footerbottom {width: 100%; height: 580px; background-color: #222222; position: relative;}
+.footerbottom .footermenu{position: absolute; top: 50px; left: 160px;}
+.footerbottom .footermenu ul{float: left; margin-right: 60px;}
+.footerbottom .footermenu ul li:first-child{font-size: 20px; margin-bottom: 30px; font-weight: bold; color: #fff;}
+.footerbottom .footermenu ul li{font-size: 14px; text-align: center; line-height: 14px; color: #bababa; margin-bottom: 10px; height: 30px;}
+.footerbottom .inquiry{color: #fff; position: absolute; top: 50px; right: 580px; font-size: 20px;}
+.footerbottom .inquiry ul li:first-child{margin-bottom: 30px; font-weight: bold;}
+.footerbottom .inquiry ul li{margin-bottom: 5px;}
+.footerbottom .sns{position: absolute; right: 520px; top: 250px;}
+.footerbottom .sns img{width: 50px; height: 50px; margin-right: 20px;}
+.footerbottom .icon{width: 230px; height: 250px; position: absolute; top: 50px; right: 160px; background-color: #fff;}
+.footerbottom .icon img{width: 230px; height: 250px;}
+.footerbottom .txttop{color: #fff;position: absolute; top: 400px; left: 160px;}
+.footerbottom .txttop p{font-size: 30px; font-weight: bold;margin-bottom: 20px;}
+.footerbottom .txttop ul li{float: left; margin-bottom: 10px; color: #bababa;}
+.footerbottom .txtbottom {position: absolute; bottom: 20px; left: 160px; color: #bababa; font-size: 28px;}
+.footerbottom .txtbottom p{position: relative;}
+.footerbottom .txtbottom p::after{content: ""; width: 1760px; height: 1px; background-color: #bababa; position: absolute; top: -20px; left: -80px;}
