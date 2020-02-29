@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>WWF Korea</title>
+    <title>세계자연기금 홈페이지 | WWF Korea</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/WWF.css">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="res/favicon.ico" type="image/x-icon">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="js/WWF.js"></script>
@@ -119,7 +121,9 @@
             <div class="gnb">
                 <div class="gnb_util">
                     <div class="gnb_util_l">
-                        <a href="#"><ion-icon name="globe"></ion-icon></a>
+                        <a href="#">
+                            <ion-icon name="globe"></ion-icon>
+                        </a>
                         <a href="#"><span>KOREA</span></a>
                         <a href="#"><img src="img/main/arrow_s.png" alt="arrow"></a>
                     </div>
@@ -129,88 +133,63 @@
                     </div>
                 </div>
                 <!--                유틸리티 영역-->
-                <div class="gnb_box">
+                <nav>
                     <ul class="gnb_1dep">
-                        <li>
-                            <a href="#">WWF</a>
-                            <div class="sub_menu">
-                                <div class="sub_wrap">
-                                    <p>WWF</p>
-                                    <ul class="gnb_2dep">
-                                        <li><a href="#">기관소개</a></li>
-                                        <li><a href="#">WWF역사</a></li>
-                                        <li><a href="#">WWF한국지부</a></li>
-                                        <li><a href="#">함께하는 사람들</a></li>
-                                        <li><a href="#">연례보고서</a></li>
-                                        <li><a href="#">채용</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <li><a class="homer" href="#">WWF</a>
+                            <ul class="sub_menu">
+                                <p>WWF</p>
+                                <li><a href="#">기관소개</a></li>
+                                <li><a href="#">WWF역사</a></li>
+                                <li><a href="#">WWF한국지부</a></li>
+                                <li><a href="#">함께하는 사람들</a></li>
+                                <li><a href="#">연례보고서</a></li>
+                                <li><a href="#">채용</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">활동</a>
-                            <div class="sub_menu">
-                                <div class="sub_wrap">
-                                    <p>활동</p>
-                                    <ul class="gnb_2dep">
-                                        <li><a href="#">글로벌 활동</a></li>
-                                        <li><a href="#">국내 활동</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <li><a href="#">활동</a>
+                            <ul class="sub_menu">
+                                <p>활동</p>
+                                <li><a href="#">글로벌 활동</a></li>
+                                <li><a href="#">국내 활동</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">참여</a>
-                            <div class="sub_menu">
-                                <div class="sub_wrap">
-                                    <p>참여</p>
-                                    <ul class="gnb_2dep">
-                                        <li><a href="#">행사 참여</a></li>
-                                        <li><a href="#">일정 참여</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <li><a href="#">참여</a>
+                            <ul class="sub_menu">
+                                <p>참여</p>
+                                <li><a href="#">행사 참여</a></li>
+                                <li><a href="#">일정 참여</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">캠페인</a>
-                            <div class="sub_menu">
-                                <div class="sub_wrap">
-                                    <p>캠페인</p>
-                                    <ul class="gnb_2dep">
-                                        <li><a href="#">멸종위기종 보전</a></li>
-                                        <li><a href="#">생태발자국 줄이기</a></li>
-                                        <li><a href="#">Earth Hour</a></li>
-                                        <li><a href="#">Our Planet</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <li><a href="#">캠페인</a>
+                            <ul class="sub_menu">
+                                <p>캠페인</p>
+                                <li><a href="#">모두보기</a></li>
+                                <li><a href="#">WWF report</a></li>
+                                <li><a href="#">WWF press</a></li>
+                                <li><a href="#">WWF story</a></li>
+                                <li><a href="#">WWF news</a></li>
+                                <li><a href="#">판다메일</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">소식 & 자료</a>
-                            <div class="sub_menu">
-                                <div class="sub_wrap">
-                                    <p>소식&자료</p>
-                                    <ul class="gnb_2dep">
-                                        <li><a href="#">모두보기</a></li>
-                                        <li><a href="#">WWF report</a></li>
-                                        <li><a href="#">WWF press</a></li>
-                                        <li><a href="#">WWF story</a></li>
-                                        <li><a href="#">WWF news</a></li>
-                                        <li><a href="#">판다메일</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <li><a href="#">소식 & 자료</a>
+                            <ul class="sub_menu">
+                                <p>소식 & 자료</p>
+                                <li><a href="#">멸종위기종 보전</a></li>
+                                <li><a href="#">생태발자국 줄이기</a></li>
+                                <li><a href="#">Earth Hour</a></li>
+                                <li><a href="#">Our Planet</a></li>
+                            </ul>
                         </li>
                         <li class="campign donate"><a href="#">후원하기</a></li>
                         <li class="campign hire"><a href="#">채용</a></li>
                     </ul>
-                </div>
+                </nav>
                 <!--                메뉴영역 끝-->
             </div>
         </div>
     </header>
     <!--    헤더영역 End-->
-       <main>
+    <main>
         <div class="slide section1">
             <div class="section_txt">
                 <h2>호주 산불 복원기금 기부</h2>
@@ -252,6 +231,4 @@
         </div>
     </main>
     <!--    메인영역 End-->
-</body>
-
-</html>
+</body></html>

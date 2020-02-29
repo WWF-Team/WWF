@@ -134,143 +134,287 @@ header {
 
             //유틸영역 End
 
-            .gnb_box {
+            //            .gnb_box {
+            //                position: absolute;
+            //                right: 0;
+            //                top: 80px;
+            //                height: 60px;
+            //                z-index: 5;
+            //
+            //                .gnb_1dep {
+            //                    float: left;
+            //                    height: 60px;
+            //                    line-height: 60px;
+            //
+            //                    > li {
+            //                        position: relative;
+            //                        float: left;
+            //                        margin: 0 40px;
+            //
+            //                        > a {
+            //                            font-weight: 500;
+            //                            font-size: 20px;
+            //                            color: #fff;
+            //
+            //                            &.on:hover ~ .sub_menu {
+            //                                opacity: 1;
+            //                                visibility: visible;
+            //                            }
+            //
+            //                            &.on:hover ~ .sub_menu::before {
+            //                                content: "";
+            //                                position: absolute;
+            //                                width: 10px;
+            //                                height: 10px;
+            //                                background-color: #e8e8e8;
+            //                                border-top: 3px solid #006262;
+            //                                border-right: 3px solid #006262;
+            //                                top: -9px;
+            //                                left: 50%;
+            //                                transform: translateX(-50%) rotate(-45deg);
+            //                                z-index: 20;
+            //                            }
+            //                        }
+            //
+            //                        .sub_menu {
+            //                            opacity: 0;
+            //                            margin-top: 22px;
+            //                            background-color: #e8e8e8;
+            //                            border-top: 3px solid #006262;
+            //                            position: absolute;
+            //                            left: 50%;
+            //                            transform: translateX(-50%);
+            //                            
+            //                            &.on{
+            //                                height: 300px;
+            //                            }
+            //
+            //                            .sub_wrap {
+            //                                position: relative;
+            //                                box-sizing: content-box;
+            //                                padding: 30px 0 10px 20px;
+            //                                width: 200px;
+            //
+            //                                p {
+            //                                    font-weight: 500;
+            //                                    font-size: 20px;
+            //                                    line-height: 20px;
+            //                                    color: #212121;
+            //                                    margin-bottom: 20px;
+            //                                }
+            //
+            //                                .gnb_2dep {
+            //                                    display: inline-block;
+            //
+            //                                    li {
+            //                                        font-size: 13px;
+            //                                        line-height: 40px;
+            //                                        font-weight: 300;
+            //
+            //                                        &:hover {
+            //                                            font-weight: bold;
+            //                                        }
+            //
+            //                                        &:hover a::after {
+            //                                            width: 180px;
+            //                                        }
+            //
+            //                                        a {
+            //                                            position: relative;
+            //                                            color: #000;
+            //
+            //                                            &::before {
+            //                                                display: none;
+            //                                            }
+            //
+            //                                            &::after {
+            //                                                content: "";
+            //                                                position: absolute;
+            //                                                width: 0%;
+            //                                                height: 2px;
+            //                                                left: 0;
+            //                                                bottom: 0;
+            //                                                background-color: #006262;
+            //                                                transition: all 0.3s;
+            //                                            }
+            //                                        }
+            //                                    }
+            //                                }
+            //                            }
+            //                        }
+            //                    }
+            //
+            //                    > .campign {
+            //                        float: left;
+            //                        text-align: center;
+            //                        margin: 0;
+            //
+            //                        &:hover a::before {
+            //                            content: "";
+            //                            display: none;
+            //                        }
+            //
+            //                        a {
+            //                            display: inline-block;
+            //                            width: 150px;
+            //                            height: 60px;
+            //                            line-height: 60px;
+            //                            font-size: 24px;
+            //                            font-weight: 500;
+            //                        }
+            //                    }
+            //
+            //                    .donate {
+            //                        background-color: #fff;
+            //
+            //                        a {
+            //                            color: #000;
+            //                        }
+            //                    }
+            //
+            //                    .hire {
+            //                        background-color: #006262;
+            //                        margin-left: 10px;
+            //                    }
+            //                }
+            //            }
+
+            nav {
                 position: absolute;
                 right: 0;
                 top: 80px;
                 height: 60px;
                 z-index: 5;
+            }
 
-                .gnb_1dep {
+            .gnb_1dep {
+                float: left;
+                height: 60px;
+                line-height: 60px;
+
+                li {
+                    position: relative;
                     float: left;
-                    height: 60px;
-                    line-height: 60px;
+                    margin: 0 40px;
 
-                    > li {
-                        position: relative;
-                        float: left;
-                        margin: 0 40px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
 
-                        &:hover .sub_menu {
-                            opacity: 1;
+                > li > a {
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #fff;
+                    text-decoration: none;
+                    display: block;
+                    transition: all 0.2s ease-in-out 0s;
+                }
+
+                ul {
+                    position: absolute;
+                    visibility: hidden;
+                    opacity: 0;
+                    margin: 0;
+                    margin-top: 20px;
+                    width: 200px;
+                    padding: 30px 0 10px 20px;
+                    left: -80px;
+                    background-color: #e8e8e8;
+                    border-top: 3px solid #006262;
+                    transform: translate(0, 20px);
+                    transition: all 0.2s ease-out;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #e8e8e8;
+                        border-top: 3px solid #006262;
+                        border-right: 3px solid #006262;
+                        top: -9px;
+                        left: 50%;
+                        transform: translateX(-50%) rotate(-45deg);
+                        z-index: 20;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    li {
+                        display: block;
+                        float: none;
+                        background: none;
+                        margin: 0;
+                        padding: 0;
+
+                        &:hover a::after {
+                            width: 180px;
                         }
 
-                        &:hover a::before {
-                            content: "";
-                            position: absolute;
-                            width: 10px;
-                            height: 10px;
-                            background-color: #e8e8e8;
-                            border-top: 3px solid #006262;
-                            border-right: 3px solid #006262;
-                            bottom: -29px;
-                            left: 50%;
-                            transform: translateX(-50%) rotate(-45deg);
-                            z-index: 20;
-                        }
+                        a {
+                            font-size: 13px;
+                            font-weight: normal;
+                            display: block;
 
-                        > a {
-                            font-weight: 500;
-                            font-size: 20px;
-                            color: #fff;
-                        }
+                            &:hover {
+                                font-weight: bold;
+                            }
 
-                        .sub_menu {
-                            opacity: 0;
-                            margin-top: 22px;
-                            background-color: #e8e8e8;
-                            border-top: 3px solid #006262;
-                            position: absolute;
-                            left: 50%;
-                            transform: translateX(-50%);
-
-                            .sub_wrap {
-                                position: relative;
-                                box-sizing: content-box;
-                                padding: 30px 0 10px 20px;
-                                width: 200px;
-
-                                p {
-                                    font-weight: 500;
-                                    font-size: 20px;
-                                    line-height: 20px;
-                                    color: #212121;
-                                    margin-bottom: 20px;
-                                }
-
-                                .gnb_2dep {
-                                    display: inline-block;
-
-                                    li {
-                                        font-size: 13px;
-                                        line-height: 40px;
-                                        font-weight: 300;
-
-                                        &:hover {
-                                            font-weight: bold;
-                                        }
-
-                                        &:hover a::after {
-                                            width: 180px;
-                                        }
-
-                                        a {
-                                            position: relative;
-                                            color: #000;
-
-                                            &::before {
-                                                display: none;
-                                            }
-
-                                            &::after {
-                                                content: "";
-                                                position: absolute;
-                                                width: 0%;
-                                                height: 2px;
-                                                left: 0;
-                                                bottom: 0;
-                                                background-color: #006262;
-                                                transition: all 0.3s;
-                                            }
-                                        }
-                                    }
-                                }
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 0%;
+                                height: 2px;
+                                left: 0;
+                                bottom: 10px;
+                                background-color: #006262;
+                                transition: all 0.3s;
                             }
                         }
-                    }
 
-                    > .campign {
-                        float: left;
-                        text-align: center;
-                        margin: 0;
-
-                        &:hover a::before {
-                            content: "";
-                            display: none;
-                        }
-
-                        a {
-                            display: inline-block;
-                            width: 150px;
-                            height: 60px;
-                            line-height: 60px;
-                            font-size: 24px;
-                            font-weight: 500;                            
+                        &:hover > a {
+                            font-weight: bold;
                         }
                     }
+                }
 
-                    .donate {
-                        background-color: #fff;
+                li:hover > ul {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translate(0, 0);
+                }
 
-                        a {
-                            color: #000;
-                        }
+                > .campign {
+                    text-align: center;
+                    margin: 0;
+
+                    a{
+                        display: inline-block;
+                        width: 150px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 24px;
+                        font-weight: 500;
                     }
+                }
 
-                    .hire {
-                        background-color: #006262;
-                        margin-left: 10px;
+                .donate {
+                    background-color: #fff;
+
+                    a {
+                        color: #000;
                     }
+                }
+
+                .hire {
+                    background-color: #006262;
+                    margin-left: 10px;
                 }
             }
 

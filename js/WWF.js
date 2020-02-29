@@ -19,8 +19,7 @@
             });
 
             //세계 WWF End
-
-
+            
             var i = 0,
                 d = 0,
                 time = false,
@@ -43,10 +42,11 @@
                 $slide.eq(i).stop().css("left", "100%").animate({
                     left: "0"
                 }, 1500)
+
+                $countBox.text(count[i])
+
                 d = i;
             }
-
-
 
             $arrow.click(function (e) {
                 e.preventDefault();
